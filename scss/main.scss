@@ -1,0 +1,47 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// sass - utils
+@import "../sass/sass-utils/variables";
+@import "../sass/sass-utils/extends";
+@import "../sass/sass-utils/mixins";
+
+// pages
+@import "../sass/pages/home";
+
+// base
+@import "../sass/base/reset";
+@import "../sass/base/typography";
+
+//component
+@import "../sass/component/buttons";
+
+// layout
+@import "../sass/layout/header";
+@import "../sass/layout/join-section";
+@import "../sass/layout/gallery";
+@import "../sass/layout/timeline";
+@import "../sass/layout/footer";
+
+body {
+  background-color: #151515;
+  font-family: "Ubuntu";
+}
+* {
+  // border: .1px solid rgb(248, 108, 108) !important;
+}
+.nunito {
+  font-family: "Nunito";
+}
+.content-padding {
+  padding: 0 215px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

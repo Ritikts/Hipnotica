@@ -1,0 +1,32 @@
+.footer {
+  margin-top: 211px;
+
+  .item-1 {
+    height: 435px;
+    width: 100%;
+    background: linear-gradient(
+      93.67deg,
+      #d672f5 3.02%,
+      #6a1ec7 47.43%,
+      #2a0c4e 94.05%
+    );
+    @extend %center;
+  }
+  h2 {
+    font-size: 80px;
+  }
+  p {
+    font-size: 25px;
+  }
+  .create-btn {
+    padding: 1.0625rem 1.625rem;
+    @include size(13.125rem, 3.5rem);
+    font-size: 1rem;
+    margin-top: 55px;
+  }
+  .item-2 {
+    .twitter-link {
+      font-size: 18px;
+    }
+  }
+}

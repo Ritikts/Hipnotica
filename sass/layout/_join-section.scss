@@ -1,0 +1,79 @@
+.join {
+  margin-top: 190px;
+  .join-title {
+    font-size: 60px;
+  }
+  .wave {
+    margin-left: -195px;
+    margin-bottom: -100px;
+  }
+  .numbers {
+    margin-left: 110px;
+    .text {
+      letter-spacing: 0.225em;
+      font-size: 20px;
+      margin-top: 30px;
+    }
+    .number {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 100px;
+      margin-left: -10px;
+      background: gradient(
+        linear,
+        left top,
+        right top,
+        from(#222),
+        to(#222),
+        color-stop(0.5, #fff)
+      );
+      background-size: 125px 100%;
+      animation-name: shimmer;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    @keyframes shimmer {
+      0% {
+        background-position: top left;
+      }
+      100% {
+        background-position: top right;
+      }
+    }
+    .number-1 {
+      background-image: linear-gradient(
+        93.67deg,
+        #78787800 25.94%,
+        #ffffffa5 85.59%
+      );
+      background-color: #d672f5;
+    }
+    .number-2 {
+      background-image: linear-gradient(
+        93.67deg,
+        #78787800 25.94%,
+        #ffffffa5 85.59%
+      );
+      background-color: #76bdff;
+    }
+    .number-3 {
+      background-image: linear-gradient(
+        93.67deg,
+        #78787800 25.94%,
+        #ffffffa5 85.59%
+      );
+      background-color: #21edab;
+    }
+  }
+
+  .list-item:hover {
+    background-image: linear-gradient(
+      270deg,
+      rgba(61, 61, 61, 0.04) 0%,
+      #1a1a1a 100%
+    );
+  }
+}

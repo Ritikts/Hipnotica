@@ -1,0 +1,77 @@
+.header {
+  height: 927px;
+  //   background-image: url(/img/header-bg.png);
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   mix-blend-mode: overlay;
+  @extend %center;
+  .account-btn {
+    padding: 1.0625rem 1.625rem;
+    @include size(9.625rem, 3.5rem);
+    font-size: 1rem;
+  }
+  nav {
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 100;
+    @media screen and (min-width: 1200px) {
+      padding: 0 215px;
+    }
+  }
+  .title {
+    @extend %center;
+  }
+  h1 {
+    font-size: 30px;
+    @media screen and (min-width: 992px) {
+      font-size: 80px;
+    }
+    @media screen and (min-width: 1400px) {
+      width: 50%;
+    }
+  }
+  .nft-text-bg {
+    background: linear-gradient(
+      118.08deg,
+      #21edab 20.5%,
+      #32cfbf 43.72%,
+      #52a1d3 56.54%,
+      #8f4cf8 79.27%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .get-start-btn {
+    background: linear-gradient(
+      93.67deg,
+      #d672f5 3.02%,
+      #6a1ec7 47.43%,
+      #2a0c4e 94.05%
+    );
+    padding: 17px 35px;
+    @include size(9.625rem, 3.5rem);
+    @extend %center;
+    position: relative;
+  }
+  ul {
+    background: linear-gradient(
+      118.08deg,
+      #21edab 20.5%,
+      #32cfbf 43.72%,
+      #52a1d3 56.54%,
+      #8f4cf8 79.27%
+    );
+    gap: 5.8125rem;
+    
+    @media screen and (min-width: 992px) {
+      border-radius: 2.25rem 2.25rem 0px 0px;
+      padding: 20px 4.375rem;
+    }
+    @media screen and (max-width: 991px) {
+      border-radius: 18px;
+      padding: 50px 4.375rem;
+    }
+  }
+}
